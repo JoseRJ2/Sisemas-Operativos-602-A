@@ -1,0 +1,29 @@
+Medicion de tiempos del programa T1 y T2 (T1 es el programa multihilos y T2 es el programa monohilo).
+
+El programa pide una n(tamaño de los arreglos), de tamaño >=1000, si la n no es de esta forma se sale del programa, una vez obtenida la n
+lleno los arreglos con numeros aleatorios entre 0 y 10000, una vez teniendo los arreglos llenos, procedo a calcular el producto punto.
+
+n = 10000: 
+    T1=0.000792 segundos
+    T2=0.004162 segundos
+
+n = 50000
+    T1=0.004024 segundos
+    T2=0.011145 segundos
+
+n = 100000
+    T1=0.008495 segundos
+    T2=0.048613 segundos
+
+n = 300000
+    T1=0.027636 segundos
+    T2=0.073971 segundos
+
+En este caso vemos que si se estan ejecutando se los programas de la manera en que se esperaba, pues el programa multihilos esta funcionando mas
+rapido que el monohilo, ya que en el programa multihilo hice una funcion o proceso el cual calcula el producto punto para cualquier par de vectores
+solo es cosa de mandarle la estructura la cual ya tiene dentro los dos vectores rellenados con datos aleatorios para calcular su producto punto,
+como los hilos se ejecutan de manera concurrente en el procesador el cual tiene multiples nucleos, basicamente se ejecutan al mismo tiempo los 4 
+calculos de producto punto al mismo tiempo por tanto es resultado es mas rapido que en el monohilo el cual se ejecuta de manera secuencial y hay 
+instrucciones que requieren mucho tiempo de CPU por tanto el programa se alenta, ademas de que no puede hacer nada mas hasta que esas partes hayan 
+terminado de ejecutarse, en este caso los ciclos for, para cada par de vectores al realizar el calculo, y por esta razon los programas multihilo suelen
+ser mas rapidos que los programas monohilo, en este caso en particular resulto correcto el resultado esperado.
