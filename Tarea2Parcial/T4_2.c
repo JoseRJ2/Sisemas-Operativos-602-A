@@ -3,6 +3,9 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/*En clase se explicó y se programó una solución al problema de los cinco filósofos comensales. Programe y explique dos soluciones alternativas a ese problema.
+En esta segunda solucion abordo la solucion de la asimetria que basicamente consiste en lugar de intentar tomar ambos tenedores al mismo tiempo, un filósofo primero intenta tomar el tenedor a su izquierda y luego el tenedor a su derecha (o viceversa).*/
+
 #define NUM_FILOSOFOS 5
 #define TIEMPO_COMER_MAXIMO 3
 

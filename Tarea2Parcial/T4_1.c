@@ -3,6 +3,10 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+
+/*En clase se explicó y se programó una solución al problema de los cinco filósofos comensales. Programe y explique dos soluciones alternativas a ese problema.
+en esta solucion se introduce un camarero que controla el acceso a los tenedores. Los filósofos ahora deben solicitar permiso al camarero antes de intentar tomar los tenedores. */
+
 #define NUM_FILOSOFOS 5
 #define NUM_TENEDORES 5
 #define MAX_CAMAREROS 1
